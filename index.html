@@ -1,16 +1,4 @@
 <!DOCTYPE html>
-<script language="javascript">
-  document.onmousedown = disableclick;
-  status = "Right Click Disabled";
-  Function disableclick(e)
-  {
-    if(event.button == 2)
-    {
-      alert(status);
-      return false; 
-    }
-  }
-</script>
 <html lang="en-US">
   <head>
     <meta charset="UTF-8">
@@ -23,7 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
   </head>
-  <body id="top">
+  <body oncontextmenu="return false" id="top">
     <header>
       <div class="profile-page sidebar-collapse">
         <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
