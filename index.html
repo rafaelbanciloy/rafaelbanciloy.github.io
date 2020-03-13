@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<script language="javascript">
+  document.onmousedown = disableclick;
+  status = "Right Click Disabled";
+  Function disableclick(e)
+  {
+    if(event.button == 2)
+    {
+      alert(status);
+      return false; 
+    }
+  }
+</script>
 <html lang="en-US">
   <head>
     <meta charset="UTF-8">
